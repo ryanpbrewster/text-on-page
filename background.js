@@ -1,3 +1,3 @@
 chrome.browserAction.onClicked.addListener((tab) => {
-  alert('icon clicked');
+  chrome.tabs.executeScript({ file: "on-page.js" });
 });
